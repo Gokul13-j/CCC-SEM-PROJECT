@@ -1,0 +1,22 @@
+{
+  "name": "lcs-web",
+  "version": "1.0.0",
+  "description": "Web application for Longest Common Subsequence using C++ backend",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "build-cpp": "g++ backend/lcs.cpp -o backend/lcs.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["lcs", "dynamic-programming", "cpp", "nodejs"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
