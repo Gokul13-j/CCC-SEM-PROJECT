@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Common Subsequence - Dynamic Programming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Longest Common Subsequence</h1>
+            <p>Interactive Dynamic Programming Demonstration</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="string1">First String:</label>
+                    <input type="text" id="string1" placeholder="Enter first string..." value="AGGTAB">
+                </div>
+
+                <div class="input-group">
+                    <label for="string2">Second String:</label>
+                    <input type="text" id="string2" placeholder="Enter second string..." value="GXTXAYB">
+                </div>
+
+                <button id="compute-btn" class="compute-btn">Compute LCS</button>
+            </div>
+
+            <div class="result-section">
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Computing LCS...</p>
+                </div>
+
+                <div id="result" class="result" style="display: none;">
+                    <h3>Results:</h3>
+                    <div class="result-item">
+                        <strong>LCS:</strong> <span id="lcs-result"></span>
+                    </div>
+                    <div class="result-item">
+                        <strong>Length:</strong> <span id="lcs-length"></span>
+                    </div>
+                </div>
+
+                <div id="error" class="error" style="display: none;">
+                    <p id="error-message"></p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>About LCS</h3>
+                <p>The Longest Common Subsequence (LCS) problem is a classic dynamic programming problem. It finds the longest subsequence present in both given sequences, maintaining the relative order of elements.</p>
+
+                <h4>Example:</h4>
+                <p>String 1: "AGGTAB"</p>
+                <p>String 2: "GXTXAYB"</p>
+                <p>LCS: "GTAB" (length: 4)</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with HTML/CSS/JavaScript frontend and C++ backend</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
